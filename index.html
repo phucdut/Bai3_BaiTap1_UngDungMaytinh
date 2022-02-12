@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ứng dụng máy tính</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+<div id="calc_1">
+    <h3>Calculator</h3>
+    <br>
+    <form action="" id="form1">
+        <input id="bien1" type="text" placeholder="Mời nhập số" />
+        <input id="bien2" type="text" placeholder="Mời nhập số" />
+        <br><br>
+        <button id="add" class="btn" type="button" name="add">
+            Addition(+)
+        </button>
+        <button id="sub" class="btn" type="button" name="sub">
+            Subtraction(-)
+        </button>
+        <button id="mul" class="btn" type="button" name="mul">
+            Multiplication(x)
+        </button>
+        <button id="div" class="btn" type="button" name="div">
+            Division(&#247;)
+        </button>
+        <br><br>
+        <p id="result"></p>
+    </form>
+</div>
+
+<script src='main.js'></script>
+
+
+<form>
+    <table id="calc_container">
+        <!-- <tr>
+            <td colspan="4">
+                <input type="text" name="display" id="display">
+            </td>
+        </tr> -->
+        <tr>
+            <td colspan="4">
+                <input type="text" name="display" id="display" placeholder="0" disabled/>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" class="btn1">
+                <button type="button" value="AC" name="clear" onclick="display.value = ''">AC</button>
+            </td>
+            <td class="operator">
+                <button type="button" value="/" name="division" onclick="display.value += '&#247'">&#247</button>
+            </td>
+        </tr>
+        <tr>
+            <td class="btn2">
+                <button type="button" value="7" name="7" onclick="display.value += '7'">7</button>
+            </td>
+            <td class="btn2">
+                <button type="button" value="8" name="8" onclick="display.value += '8'">8</button>
+            </td>
+            <td class="btn2">
+                <button type="button" value="9" name="9" onclick="display.value += '9'">9</button>
+            </td>
+            <td class="operator">
+                <button type="button" value="x" name="multiplication" onclick="display.value += '*'">x</button>
+            </td>
+        </tr>
+        <tr>
+            <td class="btn2">
+                <button type="button" value="4" name="4" onclick="display.value += '4'">4</button>
+            </td>
+            <td class="btn2">
+                <button type="button" value="5" name="5" onclick="display.value += '5'">5</button>
+            </td>
+            <td class="btn2">
+                <button type="button" value="6" name="6" onclick="display.value += '6'">6</button>
+            </td>
+            <td class="operator">
+                <button type="button" value="-" name="subtraction" onclick="display.value += '-'">-</button>
+            </td>
+        </tr>
+        <tr>
+            <td class="btn2">
+                <button type="button" value="1" name="1" onclick="display.value += '1'">1</button>
+            </td>
+            <td class="btn2">
+                <button type="button" value="2" name="2" onclick="display.value += '2'">2</button>
+            </td>
+            <td class="btn2">
+                <button type="button" value="3" name="3" onclick="display.value += '3'">3</button>
+            </td>
+            <td class="operator">
+                <button type="button" value="+" name="addition" onclick="display.value += '+'">+</button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="btn3">
+                <button type="button" value="0" name="0" onclick="display.value += '0'">0</button>
+            </td>
+            <td class="btn2">
+                <button type="button" value="." name="." onclick="display.value += '.'">&#46</button>
+            </td>
+            <td class="operator">
+                <button id="equal" type="button" value="=" name="=" onclick="display.value = eval(display.value)">=</button>
+            </td>
+        </tr>
+    </table>
+</form>
+
+
+
+</body>
+
+</html>
